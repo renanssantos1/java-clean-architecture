@@ -18,4 +18,11 @@ class EmailTest {
                 () -> new Email("emailInvalido"));
     }
 
+    @Test
+    void deveSerCriadoUmaInstanciaValidaDeEmail() {
+        Email email = new Email("fulano@gmail.com");
+
+        assertEquals(email, email.getEmail());
+    }
+
 }
