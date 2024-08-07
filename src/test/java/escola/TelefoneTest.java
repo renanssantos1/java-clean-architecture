@@ -9,13 +9,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class TelefoneTest {
     @Test
     void naoDeveriaCriarTelefoneComDDDInvalidos(){
-        assertThrows(IllformedLocaleException.class,
+        assertThrows(IllegalArgumentException.class,
                 () -> new Telefone(null, "123456789"));
 
-        assertThrows(IllformedLocaleException.class,
+        assertThrows(IllegalArgumentException.class,
                 () -> new Telefone("", "123456789"));
 
-        assertThrows(IllformedLocaleException.class,
+        assertThrows(IllegalArgumentException.class,
                 () -> new Telefone("1", "123456789"));
     }
 

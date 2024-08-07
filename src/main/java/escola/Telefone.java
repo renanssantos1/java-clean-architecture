@@ -10,7 +10,7 @@ public class Telefone {
             throw new IllegalArgumentException("DDD e numero obrigatorios");
         }
 
-        if (!ddd.matches("^\\d{2}$\n") || !numero.matches("^\\d{8,9}$\n")){
+        if (!ddd.matches("^\\d{2}$") || !numero.matches("^\\d{8,9}$")) {
             throw new IllegalArgumentException("Formato do telefone invalido");
         }
 
