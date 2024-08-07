@@ -7,11 +7,11 @@ public class Email {
     private String email;
 
     public Email(String email) {
-        if (email == null){
+        if (email == null) {
             throw new IllegalArgumentException("Email obrigatorio.");
         }
 
-        if(!email.matches("^[\\w\\.-]+@[a-zA-Z\\d\\.-]+\\.[a-zA-Z]{2,}$\n")) {
+        if (!email.matches("^[\\w\\.-]+@[a-zA-Z\\d\\.-]+\\.[a-zA-Z]{2,}$")) {
             throw new IllegalArgumentException("Formato de email invalido.");
         }
 
