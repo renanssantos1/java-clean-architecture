@@ -1,4 +1,6 @@
-package escola;
+package br.com.ca.escola.dominio.indicacao;
+
+import br.com.ca.escola.dominio.aluno.Aluno;
 
 import java.time.LocalDateTime;
 

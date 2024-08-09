@@ -1,4 +1,8 @@
-package escola;
+package br.com.ca.escola.dominio.aluno;
+
+import br.com.ca.escola.dominio.usuario.CPF;
+import br.com.ca.escola.dominio.usuario.Telefone;
+import br.com.ca.escola.dominio.usuario.Email;
 
 import java.util.ArrayList;
 import java.util.List;
