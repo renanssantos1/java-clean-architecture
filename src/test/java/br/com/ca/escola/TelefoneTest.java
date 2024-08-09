@@ -1,6 +1,6 @@
 package br.com.ca.escola;
 
-import br.com.ca.escola.usuario.Telefone;
+import br.com.ca.escola.dominio.usuario.Telefone;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
