@@ -1,4 +1,4 @@
-package escola;
+package br.com.ca.escola.usuario;
 
 import java.util.Objects;
 

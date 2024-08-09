@@ -1,6 +1,4 @@
-package escola;
-
-import java.util.Objects;
+package br.com.ca.escola.usuario;
 
 public class Email {
 

@@ -1,4 +1,4 @@
-package escola;
+package br.com.ca.escola.usuario;
 
 public class Telefone {
     private String ddd;

@@ -1,4 +1,7 @@
-package escola;
+package br.com.ca.escola.aluno;
+
+import br.com.ca.escola.usuario.CPF;
+import br.com.ca.escola.usuario.Email;
 
 public class FabricaDeAluno {
 

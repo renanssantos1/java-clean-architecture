@@ -1,8 +1,7 @@
-package escola;
+package br.com.ca.escola;
 
+import br.com.ca.escola.usuario.Telefone;
 import org.junit.jupiter.api.Test;
-
-import java.util.IllformedLocaleException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -38,6 +37,6 @@ class TelefoneTest {
         Telefone telefone = new Telefone(ddd, numero);
 
         assertEquals(ddd, telefone.getDdd());
-        assertEquals(ddd, telefone.getNumero());
+        assertEquals(numero, telefone.getNumero());
     }
 }
