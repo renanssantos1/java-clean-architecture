@@ -1,7 +1,6 @@
 package br.com.ca.escola.aplicacao.matricular;
 
 import br.com.ca.escola.dominio.aluno.Aluno;
-import br.com.ca.escola.dominio.aluno.FabricaDeAluno;
 import br.com.ca.escola.repositorios.RepositorioDeAlunos;
 
 public class MatricularAluno {
@@ -12,10 +11,8 @@ public class MatricularAluno {
         this.repositorioDeAlunos = repositorioDeAlunos;
     }
 
-    public void matricular(MatricularAlunoDTO alunoDTO){
-        Aluno aluno = FabricaDeAluno
-                .comCPFNomeEmail(alunoDTO.getNomeAluno(), alunoDTO.getEmailAluno(), alunoDTO.getEmailAluno()).build();
-
+    public void matricular(MatricularAlunoDTO dados){
+        Aluno aluno = dados.criarAluno();
         repositorioDeAlunos.matricular(aluno);
     }
 }

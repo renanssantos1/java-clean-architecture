@@ -10,7 +10,7 @@ public class MatricularAlunoViaLinhaDeComando {
         String cpf = "123.456.789-00";
         String email = "fulano@email.com";
 
-        MatricularAluno service = new MatricularAluno(new RepositorioDeAlunosEmMemoria());
-        service.matricular(new MatricularAlunoDTO(nome, email, cpf));
+        MatricularAluno repositorio = new MatricularAluno(new RepositorioDeAlunosEmMemoria());
+        repositorio.matricular(new MatricularAlunoDTO(nome, email, cpf));
     }
 }

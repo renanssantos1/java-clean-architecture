@@ -1,6 +1,8 @@
 package br.com.ca.escola.aplicacao.matricular;
 
 import br.com.ca.escola.dominio.aluno.Aluno;
+import br.com.ca.escola.dominio.usuario.CPF;
+import br.com.ca.escola.dominio.usuario.Email;
 
 public class MatricularAlunoDTO {
     private String nomeAluno;
@@ -13,15 +15,7 @@ public class MatricularAlunoDTO {
         this.emailAluno = emailAluno;
     }
 
-    public String getNomeAluno() {
-        return nomeAluno;
-    }
-
-    public String getCpfAluno() {
-        return cpfAluno;
-    }
-
-    public String getEmailAluno() {
-        return emailAluno;
+    public Aluno criarAluno(){
+        return new Aluno(new CPF(cpfAluno), nomeAluno, new Email(emailAluno));
     }
 }
