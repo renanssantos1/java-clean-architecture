@@ -21,4 +21,17 @@ public class CPF {
     public String toString() {
         return numeroCPF;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CPF cpf = (CPF) o;
+        return numeroCPF.equals(cpf.numeroCPF);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numeroCPF);
+    }
 }

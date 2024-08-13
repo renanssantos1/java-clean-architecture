@@ -25,7 +25,6 @@ class MatricularAlunoTest {
                 new CPF("123.456.789-00"));
 
         assertEquals("Fulano", alunoEncontrado.getNome());
-
     }
 
 }
